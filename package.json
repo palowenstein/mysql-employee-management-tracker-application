@@ -1,0 +1,32 @@
+{
+  "name": "hw12-employee-management-tracker-application",
+  "version": "1.0.0",
+  "description": "Interface software to manage database information built on Node.js, Inquirer and MySQL. End goal is to manage the employee roster of a medium sized company.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palowenstein/hw12-employee-management-tracker-application.git"
+  },
+  "keywords": [
+    "node",
+    "inquirer",
+    "mysql",
+    "employee management",
+    "database management."
+  ],
+  "author": "Pierre André Lowenstein",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/palowenstein/hw12-employee-management-tracker-application/issues"
+  },
+  "homepage": "https://github.com/palowenstein/hw12-employee-management-tracker-application#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "express": "^4.17.1",
+    "inquirer": "^7.3.3",
+    "mysql": "^2.18.1"
+  }
+}

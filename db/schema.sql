@@ -8,7 +8,7 @@ USE EmployeeRoster_db;
 -- Department Table Specs
 CREATE TABLE department  (
   id INT NOT NULL AUTO_INCREMENT,
-  dep_name VARCHAR (30) NOT NULL,
+  department_name VARCHAR (30) NOT NULL,
   PRIMARY KEY (id)
 );
 
@@ -32,11 +32,11 @@ CREATE TABLE employee  (
 );
 
 
--- ReadMe Markdown
+-- Instructions
 
 -- * **department**:
 --   * **id** - INT PRIMARY KEY
---   * **name** - VARCHAR(30) to hold department name
+--   * **department_name** - VARCHAR(30) to hold department name
 
 -- * **role**:
 --   * **id** - INT PRIMARY KEY

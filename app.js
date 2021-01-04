@@ -13,7 +13,7 @@ const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "________",
+    password: "",
     database: "EmployeeRoster_db"
   });
 
@@ -141,7 +141,7 @@ const addRole = () => {
             },
         },
         {
-            name: "departmentID", type: "input", message: "Please enter the new role's department ID.",
+            name: "departmentId", type: "input", message: "Please enter the new role's department ID.",
             validate: (input) => {
                 if ( !input ) { return 'Cannot accept an empty input field.'; }
                 return true;
@@ -153,7 +153,7 @@ const addRole = () => {
         {
             title: response.roleTitle,
             salary: parseInt(response.roleSalary),
-            department_id: parseInt(response.departmentID)
+            department_id: parseInt(response.departmentId)
         },
         (err, res) => {
             if (err) throw err;
@@ -217,7 +217,7 @@ const updateEmployeeRole = () => {
         inquirer
         .prompt([
             {
-                name: "employeeID",
+                name: "employeeId",
                 type: "input",
                 message: "Enter the Employee ID number to be updated to new role.",
                 validate: (input) => {

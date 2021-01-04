@@ -6,14 +6,14 @@ CREATE database EmployeeRoster_db;
 USE EmployeeRoster_db;
 
 -- Department Table Specs
-CREATE TABLE department  (
+CREATE TABLE department (
   id INT NOT NULL AUTO_INCREMENT,
-  department_name VARCHAR (30) NOT NULL,
+  name VARCHAR(30) NOT NULL,
   PRIMARY KEY (id)
 );
 
 -- Role Table Specs
-CREATE TABLE role  (
+CREATE TABLE role (
   id INT NOT NULL AUTO_INCREMENT,
   title VARCHAR(30) NOT NULL,
   salary DECIMAL (10,2) NOT NULL,
@@ -22,21 +22,24 @@ CREATE TABLE role  (
 );
 
 -- Employee Table Specs
-CREATE TABLE employee  (
+CREATE TABLE employee (
   id INT NOT NULL AUTO_INCREMENT,
-  first_name VARCHAR(30) NOT NULL,
-  last_name VARCHAR(30) NOT NULL,
-  role_id INT NOT NULL,
+  first_name VARCHAR(30) NULL,
+  last_name VARCHAR(30) NULL,
+  role_id INT NULL,
   manager_id INT NULL,
   PRIMARY KEY (id)
+  -- FOREIGN KEY (role_id) REFERENCES role(id),
+  -- FOREIGN KEY (manager_id) REFERENCES employee(id)
 );
+
 
 
 -- Instructions
 
 -- * **department**:
 --   * **id** - INT PRIMARY KEY
---   * **department_name** - VARCHAR(30) to hold department name
+--   * **name** - VARCHAR(30) to hold department name
 
 -- * **role**:
 --   * **id** - INT PRIMARY KEY

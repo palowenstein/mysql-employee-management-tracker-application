@@ -104,30 +104,3 @@
 &nbsp;|&nbsp;
 <a href="mailto:soundtrackspecialist@gmail.com" title="Courriel">Send me a 'courriel'</a>
 </p>
-
-
-
-
-
-
-
-
-
-
-
-# hw12-employee-management-tracker-application
-# Unit 12 MySQL Homework: Employee Tracker
-Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases.
-Often these interfaces are known as CMS/Content Management Systems.
-Goald: build a solution for managing a company's employees — node, inquirer, MySQL.
-
-
-
-
-
-* Use the [MySQL](https://www.npmjs.com/package/mysql) NPM package to connect to your MySQL database and perform queries.
-* Use [InquirerJs](https://www.npmjs.com/package/inquirer/v/0.2.3) NPM package to interact with the user via the command-line.
-* Use [console.table](https://www.npmjs.com/package/console.table) to print MySQL rows to the console. There is a built-in version of `console.table`, but the NPM package formats the data a little better for our purposes.
-* You may wish to have a separate file containing functions for performing specific SQL queries you'll need to use. Could a constructor function or a class be helpful for organizing these?
-* You will need to perform a variety of SQL JOINS to complete this assignment, and it's recommended you review the week's activities if you need a refresher on this.
-![Employee Tracker](Assets/employee-tracker.gif)

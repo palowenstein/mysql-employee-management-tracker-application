@@ -6,14 +6,14 @@
 // Dependencies
 const mysql = require("mysql");
 const inquirer = require("inquirer");
-// const consoleTable = require("console.table");
+const consoleTable = require("console.table"); // Comment this line out if you need index # prior to ID in table.
 
 // MySQL Database Connection
 const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "",
+    password: "Margaux0228",
     database: "EmployeeRoster_db"
   });
 

@@ -31,8 +31,8 @@
   <ul>
     <li>(Create) Add departments, roles, employees.</li>
     <li>(Read) View departments, roles, employees.</li>
-    <li>(Update) Update employee roles.<li>
-    <li>(Delete) Delete departments, roles, and employees</li>
+    <li>(Update) Update employee roles.</li>
+    <li>(Delete) Delete employees.</li>
   </ul>
 </li>
 </ul>
@@ -49,19 +49,27 @@
 
 ![MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-0-mac-system-preferences-mysql-running-in-background.png "MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)")
 
-
 ## Instructions
 <ul>
 <li>Makes sure MySQL is properly installed, password initiatied and running in the background as seen in the Details section above.</li>
+<li>In MySQL Workbench, load the schema.sql file located in the application db folder then initiate it by clicking on the lightning bolt (GIF/MP4).</li>
+<li>Still in MySQL Workbench, populate the database with the seed.sql file (ATARI employees) also located in the application db folder (GIF/MP4).</li>
 <li>In Terminal, locate the application folder and enter into it via the 'cd' command: cd mysql-employee-management-tracker-application</li>
-<li>Run the 'npm install' command to install the express module from the package.json (screenshot #1).</li>
-<li>Run the 'node app.js' command to start the application in Terminal (GIF/MP4).</li>
+<li>Run the 'npm install' command to install the express module from the package.json.</li>
+<li>Run the 'node app.js' command to launch the application in Terminal (GIF/MP4).</li>
+<li>Once the application us running, you can exert all four CRUD privileges (Create Read Update Delete):
+  <ol>
+    <li>Creation: Create departments, roles, employees.</li>
+    <li>Reading: Read departments, roles, employees.</li>
+    <li>Updating: Update employee roles.</li>
+    <li>Deletion: Delete employees.</li>
+  </ol>
+<li>The application can be closed from the main menu by selecting the 'Leave' option.</li>
 </ul>
 
 <p><i>Refer to app.js (javascript file) for code dissection.</i></p>
 
 ## Screenshots
-
 
 ## Video
 

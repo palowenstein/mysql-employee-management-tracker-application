@@ -24,9 +24,9 @@
 <ul>
 <li>The MySQL Employee Management Tracker Application allows for the creation and maintenance of an employee database, ideal for company management.</li>
 <li>The application is powered by Node.js to allow for JS execution outside of the browser (Terminal window), Express (Get/Post Requests between REST 'REpresentational State Transfer' APIs), Inquirer (for information collection), Console.table (for a clean table display) and a MySQL database which stores the information created, read, updated or deleted (CRUD).</li>
-<li>The MySQL database stored in the db folder can be initiatied via Terminal or, more simply, via MySQL Workbench.</li>
-<li>In addition of the database schema, the application includes a pre-filled seed.sql, also stored in the db folder, which populates the database at startup so that it doesn't show empty.</li>
-<li>The seed.sql file can be initiatied via Terminal or via MySQL Workbench, it contains the names of 19 Atari Inc. key employees (1972-1984) such as Nolan Bushnell or Jay Miner.</li>
+<li>The MySQL database stored in the db folder (schema.sql) can be initiatied via Terminal or, more simply, via MySQL Workbench (GIF/MP4).</li>
+<li>In addition of the database schema, the application includes a pre-filled seed.sql file, also stored in the db folder, which populates the database at startup so that it doesn't show empty.</li>
+<li>Just like the database, the seed.sql file can be executed via Terminal or via MySQL Workbench, it contains the names of 19 Atari Inc. key employees (1972-1984) such as Jay Miner or Joe Decuir.</li>
 <li>The end user, via the Terminal Command-Line Interface, is allowed all four CRUD stages:
   <ul>
     <li>(Create) Add departments, roles, employees.</li>
@@ -55,9 +55,9 @@
 <li>In MySQL Workbench, load the schema.sql file located in the application db folder then initiate it by clicking on the lightning bolt (GIF/MP4).</li>
 <li>Still in MySQL Workbench, populate the database with the seed.sql file (ATARI employees) also located in the application db folder (GIF/MP4).</li>
 <li>In Terminal, locate the application folder and enter into it via the 'cd' command: cd mysql-employee-management-tracker-application</li>
-<li>Run the 'npm install' command to install the express module from the package.json.</li>
+<li>Run the 'npm install' command to install the necessary node modules from the package.json.</li>
 <li>Run the 'node app.js' command to launch the application in Terminal (GIF/MP4).</li>
-<li>Once the application us running, you can exert all four CRUD privileges (Create Read Update Delete):
+<li>Once the application is running, you can exert all four CRUD privileges (Create Read Update Delete):
   <ol>
     <li>Creation: Create departments, roles, employees.</li>
     <li>Reading: Read departments, roles, employees.</li>

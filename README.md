@@ -91,7 +91,7 @@
 
  ## License
 <p>
-<a href="./MITlicense.txt">MIT License</a> | Copyright © [2020] Pierre André Lowenstein
+<a href="./MITlicense.txt">MIT License</a> | Copyright © [2021] Pierre André Lowenstein
 </p>
 
  ## Contributions
@@ -110,5 +110,5 @@
 <p>
 <a href="http://pierreandrelowenstein.com" title="[www] Pierre Andr&eacute; Lowenstein" target="_blank">[www] pierreandrelowenstein.com</a>
 &nbsp;|&nbsp;
-<a href="mailto:soundtrackspecialist@gmail.com" title="Courriel">Send me a 'courriel'</a>
+<a href="mailto:coder@pierreandrelowenstein.com" title="Courriel / E-Mail">[e-mail] Send me a 'courriel'</a>
 </p>

@@ -2,6 +2,7 @@
 // — Functionality #1: Add departments, roles, employees
 // — Functionality #2: View departments, roles, employees
 // — Functionality #3: Update employee roles
+// — Functionality #4: Delete (Remove) Employee
 
 // Dependencies
 const mysql = require("mysql");
@@ -13,7 +14,7 @@ const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "Margaux0228",
+    password: "",
     database: "EmployeeRoster_db"
   });
 
@@ -37,7 +38,8 @@ function employeeRoster() {
             "View Departments", 
             "View Roles", 
             "View Employees",
-            "Update Employee Role", 
+            "Update Employee Role",
+            "Delete Employee",
             "Leave"
         ]
     })
@@ -50,56 +52,14 @@ function employeeRoster() {
             case "View Roles": viewRoles(); break;
             case "View Employees": viewEmployees(); break;
             case "Update Employee Role": updateEmployeeRole(); break;
+            case "Delete Employee": deleteEmployee(); break;            
             case "Leave": connection.end(); break;
         }
     });
 }
 
-// Functionality #1: View Departments, Roles, Employees //
-
-// View Employees — id, first name, last name, role, department, salary, manager. //
-
-// #1A-View Departments
-const viewDepartments = () => {
-    connection.query(`SELECT * FROM department`, (err, res) => {
-      if (err) throw err; console.table(res); employeeRoster();
-    });
-};
-// #1B-View Roles
-const viewRoles = () => {
-    connection.query(`SELECT * FROM role`, (err, res) => {
-      if (err) throw err; console.table(res); employeeRoster();
-    });
-};
-
-// #1C-View Employees
-const viewEmployees = () => {
-    connection.query( `
-    
-    SELECT
-    distinct (e.id),
-    CONCAT (e.first_name,' ',e.last_name) AS employee_name,
-    r.title as role_title,
-    d.name,
-    r.salary,
-    e.manager_id
-
-    FROM employee e
-    INNER JOIN role r 
-    ON e.role_id = r.id
-    INNER JOIN department d
-    ON r.department_id = d.id
-    ORDER BY e.id ASC LIMIT 100`
-    , (err, res) => {
-        if (err) throw err; // mysql server / sql database association.
-        console.table(res);
-        employeeRoster(); // Executes the employeeRoster function to present the user menu choices.
-    })
-};
-
-// Functionality #2: Add Departments, Roles, Employees //
-
-// #2A—Add Departments -> Name
+// Functionality #1 (C_RUD): Add Departments, Roles, Employees //
+// #1A—Add Departments -> Name
 // ------------------------------------------
 const addDepartment = () => {
     inquirer
@@ -120,28 +80,27 @@ const addDepartment = () => {
         });
     });
 };
-
 // #1B—Add Roles -> Title / Salary / ID
 // ------------------------------------------
 const addRole = () => {
     inquirer
     .prompt([
         {
-            name: "roleTitle", type: "input", message: "Please enter the new role title you would like to add.",
+            name: "roleTitle", type: "input", message: "Enter role title to be added.",
             validate: (input) => {
                 if ( !input ) { return 'Cannot accept an empty input field.'; }
                 return true;
             },
         },
         {
-            name: "roleSalary", type: "input", message: "Please enter the new role's salary.",
+            name: "roleSalary", type: "input", message: "Enter salary for new role title.",
             validate: (input) => {
                 if ( !input ) { return 'Cannot accept an empty input field.'; }
                 return true;
             },
         },
         {
-            name: "departmentId", type: "input", message: "Please enter the new role's department ID.",
+            name: "departmentId", type: "input", message: "Enter department ID number for new role title.",
             validate: (input) => {
                 if ( !input ) { return 'Cannot accept an empty input field.'; }
                 return true;
@@ -157,26 +116,25 @@ const addRole = () => {
         },
         (err, res) => {
             if (err) throw err;
-            console.log(`${response.roleTitle} role added successfully.`);
+            console.log(`${response.roleTitle} has been added as a new role.`);
             employeeRoster();
         });
     });
 };
-
 // #1C—Add Employees
 // ------------------------------------------
 const addEmployee = () => {
     inquirer
     .prompt([
         {
-            name: "firstName", type: "input", message: "Enter added employee's first name.",
+            name: "firstName", type: "input", message: "Enter newly added employee's first name.",
             validate: (input) => {
                 if ( !input ) { return 'Cannot accept an empty input field.'; }
                 return true;
             },
         },
         {
-            name: "lastName", type: "input", message: "Enter added employee's last name.",
+            name: "lastName", type: "input", message: "Enter newly added employee's last name.",
             validate: (input) => {
                 if ( !input ) { return 'Cannot accept an empty input field.'; }
                 return true;
@@ -206,8 +164,46 @@ const addEmployee = () => {
 };
 
 
-// — Functionality #3: Update Role for Given Employee
+// Functionality #2 (C_R_UD): View Departments, Roles, Employees //
+// #2A-View Departments
+const viewDepartments = () => {
+    connection.query(`SELECT * FROM department`, (err, res) => {
+      if (err) throw err; console.table(res); employeeRoster();
+    });
+};
+// #2B-View Roles
+const viewRoles = () => {
+    connection.query(`SELECT * FROM role`, (err, res) => {
+      if (err) throw err; console.table(res); employeeRoster();
+    });
+};
+// #2C-View Employees
+const viewEmployees = () => {
+    connection.query( `
+    
+    SELECT
+    distinct (e.id),
+    CONCAT (e.first_name,' ',e.last_name) AS employee_name,
+    r.title as role_title,
+    d.name,
+    r.salary,
+    e.manager_id
 
+    FROM employee e
+    INNER JOIN role r 
+    ON e.role_id = r.id
+    INNER JOIN department d
+    ON r.department_id = d.id
+    ORDER BY e.id ASC LIMIT 100`
+    , (err, res) => {
+        if (err) throw err; // mysql server / sql database association.
+        console.table(res);
+        employeeRoster(); // Executes the employeeRoster function to present the user menu choices.
+    })
+};
+
+
+// — Functionality #3 (CR_U_D): Update Role for Given Employee
 const updateEmployeeRole = () => {
     connection.query(`
     SELECT id, first_name, last_name
@@ -228,7 +224,7 @@ const updateEmployeeRole = () => {
             {
                 name: "updatedRoleId",
                 type: "input",
-                message: "Enter new role ID number for the selected employee.",
+                message: "Enter new department ID number for the selected employee.",
                 validate: (input) => {
                     if ( !input ) { return 'Cannot accept an empty input field.'; }
                     return true;
@@ -250,4 +246,27 @@ const updateEmployeeRole = () => {
             });
         });
     });
+};
+
+// — Functionality #4 (CRU_D): Delete Employee
+const deleteEmployee = () => {
+    let employees = []; // This creates an 'employees' array to store all employees.
+    connection.query(`SELECT id, first_name, last_name FROM employee`, // This connects to the database to import individual employee information.
+    (err, res) => {
+        res.forEach(element => {
+        employees.push(`${element.id} ${element.first_name} ${element.last_name}`); // This pushes into the 'employees' array employee information.
+        });
+    inquirer
+        .prompt({
+            name: "deletedEmployee", type: "list", message: "Select employee to be removed.", choices: employees
+        })
+    .then(response => {
+        let deletedEmployeeId = parseInt(response.deletedEmployee)
+        connection.query(`DELETE FROM employee WHERE id = ${deletedEmployeeId}`,
+        (err, res) => {
+            console.table(response);
+            employeeRoster();
+        });
+    });
+    })
 };

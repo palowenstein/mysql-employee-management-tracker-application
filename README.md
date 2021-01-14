@@ -56,7 +56,7 @@
 <li>Makes sure MySQL is properly installed, password initiated and running in the background as seen in the Details section illustration above.</li>
 <li>In MySQL Workbench, load the schema.sql file, located in the application db folder, then initiate it by clicking on the lightning bolt (GIF/MP4).</li>
 <li>Still in MySQL Workbench, locate the seed.sql file in the application db folder then, as in the prior step, initiate it by clicking on the lightning bolt (GIF/MP4).</li>
-<li>In the Application folder, open <strong>app.js</strong> in a text / code editor, add your MySQL Password on line 16 between the password quotation marks.</li>
+<li>In the Application folder, open <strong>app.js</strong> in a text / code editor, add your MySQL Password on line 17 between the password quotation marks.</li>
 <li>In Terminal, locate the application folder and enter into it via the 'cd' command: cd mysql-employee-management-tracker-application</li>
 <li>Run the 'npm install' command to install the necessary node modules from the package.json.</li>
 <li>Run the 'node app.js' command to launch the application in Terminal (GIF/MP4).</li>

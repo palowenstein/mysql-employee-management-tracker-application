@@ -1,9 +1,9 @@
 ## #hw12-mysql-employee-management-tracker-application 
 ![Project license](https://img.shields.io/badge/license-MIT,https://choosealicense.com/licenses/mit/-brightgreen)
 
-<h3>Employee management application executed via a Node Command Line Interface (CLI) in Terminal. Employee information is stored in a MySQL database.</h3>
+<h3>Employee management application executed via a Node Command Line Interface (CLI). Employee information is stored in a MySQL database.</h3>
 <p>Github Repository Page: https://github.com/palowenstein/mysql-employee-management-tracker-application</p>
-<p>Github Deployment Page: N/A - App is to be executed in Terminal via CLI.</p>
+<p>Github Deployment Page: N/A - App is to be executed via CLI in Terminal (Mac) or Powershell, Bash (PC).</p>
 
 # Table of Contents
   * [GIF](#Gif)
@@ -23,10 +23,10 @@
 ## Overview
 <ul>
 <li>The MySQL Employee Management Tracker Application allows for the creation and maintenance of an employee database, ideal for company management.</li>
-<li>The application is powered by Node.js to allow for JS execution outside of the browser (Terminal window), Express (Get/Post Requests between REST 'REpresentational State Transfer' APIs), Inquirer (for information collection), Console.table (for a clean table display) and a MySQL database which stores the information created, read, updated or deleted (CRUD).</li>
-<li>The MySQL database stored in the db folder (schema.sql) can be initiatied via Terminal or, more simply, via MySQL Workbench (GIF/MP4).</li>
-<li>In addition of the database schema, the application includes a pre-filled seed.sql file, also stored in the db folder, which populates the database at startup so that it doesn't show empty.</li>
-<li>Just like the database, the seed.sql file can be executed via Terminal or via MySQL Workbench, it contains the names of 19 Atari Inc. key employees (1972-1984) such as Jay Miner or Joe Decuir.</li>
+<li>The application is powered by Node.js to allow for JS execution outside of the browser (Mac Terminal window), Express (Get/Post Requests between REST 'REpresentational State Transfer' APIs), Inquirer (for information collection), Console.table (for a clean table display) and a MySQL database which stores the information created, read, updated or deleted (CRUD).</li>
+<li>The MySQL database, stored in the db folder as <strong>schema.sql</strong>, can be initiatied via Terminal or, more simply, via MySQL Workbench (GIF/MP4).</li>
+<li>In addition of the database schema, the db folder also contains a <strong>seed.sql</strong> file which will populate the database at startup so that it doesn't show empty.</li>
+<li>Like the database, the seed.sql file can be executed via Terminal or via MySQL Workbench, it contains the names of 19 Atari Inc. key employees (1972-1984) such as Jay Miner or Joe Decuir.</li>
 <li>The end user, via the Terminal Command-Line Interface, is allowed all four CRUD stages:
   <ul>
     <li>(Create) Add departments, roles, employees.</li>
@@ -43,17 +43,20 @@
 <li>A .gitignore file is present at the root level to prevent the upload of node_modules, bonus functions in development, .DS_Store.</li>
 <li>For this application to execute properly:
   <ol>
-  <li>The included package.json includes an install link to all the required dependencies (Express, Inquirer, MySQL, Console.Table) needed for the program to run. This packaged must be executed in Terminal from the application root folder (npm install) prior to executing the application (see Instructions).</li>
-  <li>Oracle's MySQL must be installed and running in the background as seen in the System Preferences photo below. The application will not run if MySQL isn't running in the background. Newcomers to MySQL will gain information from reading the following article: https://www.thoughtco.com/installing-mysql-on-mac-2693866</li>
+  <li>Oracle's MySQL must be installed and running in the background as seen in the System Preferences photo below. The application will not run correctly otherwise. Please make note of the <strong>password</strong> associated with your MySQL install as it will be required by the application. Newcomers to MySQL will gain information from reading the following article: https://www.thoughtco.com/installing-mysql-on-mac-2693866</li>
+  <li>The end user must execute the package.json file via the npm install command (Terminal). This will install the required dependencies (Express, Inquirer, MySQL, Console.Table) needed for the program to run. This package is located in the application root folder and must be executed <i>in situ</i> prior to running the application (see Instructions).</li>
+  </ol>
+</li>
 </ul>
 
 ![MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-0-mac-system-preferences-mysql-running-in-background.png "MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)")
 
 ## Instructions
 <ul>
-<li>Makes sure MySQL is properly installed, password initiatied and running in the background as seen in the Details section above.</li>
-<li>In MySQL Workbench, load the schema.sql file located in the application db folder then initiate it by clicking on the lightning bolt (GIF/MP4).</li>
-<li>Still in MySQL Workbench, populate the database with the seed.sql file (ATARI employees) also located in the application db folder (GIF/MP4).</li>
+<li>Makes sure MySQL is properly installed, password initiated and running in the background as seen in the Details section illustration above.</li>
+<li>In MySQL Workbench, load the schema.sql file, located in the application db folder, then initiate it by clicking on the lightning bolt (GIF/MP4).</li>
+<li>Still in MySQL Workbench, locate the seed.sql file in the application db folder then, as in the prior step, initiate it by clicking on the lightning bolt (GIF/MP4).</li>
+<li>In the Application folder, open <strong>app.js</strong> in a text / code editor, add your MySQL Password on line 16 between the password quotation marks.</li>
 <li>In Terminal, locate the application folder and enter into it via the 'cd' command: cd mysql-employee-management-tracker-application</li>
 <li>Run the 'npm install' command to install the necessary node modules from the package.json.</li>
 <li>Run the 'node app.js' command to launch the application in Terminal (GIF/MP4).</li>

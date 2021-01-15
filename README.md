@@ -19,6 +19,8 @@
 ## GIF
 ![MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (GIF)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-1-database-seed-setup.gif "MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (GIF)")
 ![MySQL Employee Management Tracker Application — CLI App Execution (GIF)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-4-node-cli-app-execution-1080p.gif "MySQL Employee Management Tracker Application — CLI App Execution (GIF)")
+<br />
+<i>GIF of the Application execution is too large to show. For now, please download the corresponding mp4 in the video section below.</i>
 
 ## Overview
 <ul>
@@ -50,6 +52,9 @@
 </ul>
 
 ![MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-0-mac-system-preferences-mysql-running-in-background.png "MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)")
+<br />
+MySQL runs in the background as seen in the MySQL maintenance panel located in System Preferences (Apple Macintosh).
+
 
 ## Instructions
 <ul>

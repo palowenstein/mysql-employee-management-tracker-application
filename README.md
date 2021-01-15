@@ -91,7 +91,7 @@ Executing the Appication via CLI Interface in Terminal [2] (PNG)
 ![MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (MP4)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-1-database-seed-setup.mp4 "MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (MP4)")
 <br />
 
-![MySQL Employee Management Tracker Application — CLI App Execution (MP4)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-2-cli-app-execution.mp4 "MySQL Employee Management Tracker Application — CLI App Execution (MP4)")
+![MySQL Employee Management Tracker Application — Executing the Appication via CLI Interface in Terminal (MP4)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-4-node-cli-app-execution-1080p.mp4 "MySQL Employee Management Tracker Application — Executing the Appication via CLI Interface in Terminal (MP4)")
 <br />
 
 ## References

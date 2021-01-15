@@ -18,9 +18,12 @@
 
 ## GIF
 ![MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (GIF)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-1-database-seed-setup.gif "MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (GIF)")
+<br />
+MySQL Workench: 1) Setting up the database, 2) Populating the database with seed.sql. (GIF)
+
 ![MySQL Employee Management Tracker Application — CLI App Execution (GIF)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-4-node-cli-app-execution-1080p.gif "MySQL Employee Management Tracker Application — CLI App Execution (GIF)")
 <br />
-<i>GIF of the Application execution is too large to show. For now, please download the corresponding mp4 in the video section below.</i>
+Executing the Application via CLI (Command Line Interface) in Terminal.
 
 ## Overview
 <ul>

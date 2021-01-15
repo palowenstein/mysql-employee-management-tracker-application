@@ -18,7 +18,12 @@
 
 ## GIF
 ![MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (GIF)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-1-database-seed-setup.gif "MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (GIF)")
-![MySQL Employee Management Tracker Application — CLI App Execution (GIF)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-2-cli-app-execution.gif "MySQL Employee Management Tracker Application — CLI App Execution (GIF)")
+<br />
+MySQL Workench: 1) Setting up the database, 2) Populating the database with seed.sql. (GIF)
+
+![MySQL Employee Management Tracker Application — CLI App Execution (GIF)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-4-node-cli-app-execution-1080p.gif "MySQL Employee Management Tracker Application — CLI App Execution (GIF)")
+<br />
+Executing the Application via CLI (Command Line Interface) in Terminal.
 
 ## Overview
 <ul>
@@ -50,6 +55,9 @@
 </ul>
 
 ![MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-0-mac-system-preferences-mysql-running-in-background.png "MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)")
+<br />
+MySQL runs in the background as seen in the MySQL maintenance panel located in System Preferences (Apple Macintosh).
+
 
 ## Instructions
 <ul>
@@ -75,15 +83,19 @@
 ## Screenshots
 
 ![MySQL Employee Management Tracker Application — Setting up the database in MySQL Workbench (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-2-database-setup.png "MySQL Employee Management Tracker Application — Setting up the database in MySQL Workbench (PNG)")
+<br />
 Setting up the database in MySQL Workbench (PNG)
 
-![MySQL Employee Management Tracker Application — Populating the database with seed.mysql (ATARI Employees) in MySQL Workbench (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-3-seed-setup.png "MySQL Employee Management Tracker Application — Populating the database with seed.mysql (ATARI Employees) in MySQL Workbench (PNG)")
-Populating the database with seed.mysql (ATARI Employees) in MySQL Workbench (PNG)
+![MySQL Employee Management Tracker Application — Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-3-seed-setup.png "MySQL Employee Management Tracker Application — Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)")
+<br />
+Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)
 
 ![MySQL Employee Management Tracker Application — Executing the Appication via CLI Interface in Terminal [1] (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-4-node-cli-app-execution.png "MySQL Employee Management Tracker Application — Executing the Appication via CLI Interface in Terminal [1] (PNG)")
+<br />
 Executing the Appication via CLI Interface in Terminal [1] (PNG)
 
 ![MySQL Employee Management Tracker Application — Executing the Appication via CLI Interface in Terminal [2] (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-5-node-cli-app-execution.png "MySQL Employee Management Tracker Application — Executing the Appication via CLI Interface in Terminal [2] (PNG)")
+<br />
 Executing the Appication via CLI Interface in Terminal [2] (PNG)
 
 ## Video
@@ -91,7 +103,7 @@ Executing the Appication via CLI Interface in Terminal [2] (PNG)
 ![MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (MP4)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-1-database-seed-setup.mp4 "MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (MP4)")
 <br />
 
-![MySQL Employee Management Tracker Application — CLI App Execution (MP4)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-2-cli-app-execution.mp4 "MySQL Employee Management Tracker Application — CLI App Execution (MP4)")
+![MySQL Employee Management Tracker Application — Executing the Appication via CLI Interface in Terminal (MP4)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-4-node-cli-app-execution-1080p.mp4 "MySQL Employee Management Tracker Application — Executing the Appication via CLI Interface in Terminal (MP4)")
 <br />
 
 ## References

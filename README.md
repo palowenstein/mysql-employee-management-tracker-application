@@ -83,20 +83,20 @@ MySQL runs in the background as seen in the MySQL maintenance panel located in S
 ## Screenshots
 
 ![MySQL Employee Management Tracker Application — Setting up the database in MySQL Workbench (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-2-database-setup.png "MySQL Employee Management Tracker Application — Setting up the database in MySQL Workbench (PNG)")
+<h6>Setting up the database in MySQL Workbench (PNG)</h6>
 <br />
-Setting up the database in MySQL Workbench (PNG)
 
 ![MySQL Employee Management Tracker Application — Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-3-seed-setup.png "MySQL Employee Management Tracker Application — Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)")
+<h6>Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)</h6>
 <br />
-Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)
 
 ![MySQL Employee Management Tracker Application — Executing the Application via CLI Interface in Terminal [1] (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-4-node-cli-app-execution.png "MySQL Employee Management Tracker Application — Executing the Application via CLI Interface in Terminal [1] (PNG)")
+<h6>Executing the Application via CLI Interface in Terminal [1] (PNG)</h6>
 <br />
-Executing the Application via CLI Interface in Terminal [1] (PNG)
 
 ![MySQL Employee Management Tracker Application — Executing the Application via CLI Interface in Terminal [2] (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-5-node-cli-app-execution.png "MySQL Employee Management Tracker Application — Executing the Application via CLI Interface in Terminal [2] (PNG)")
+<h6>Executing the Application via CLI Interface in Terminal [2] (PNG)</h6>
 <br />
-Executing the Application via CLI Interface in Terminal [2] (PNG)
 
 ## Video
 

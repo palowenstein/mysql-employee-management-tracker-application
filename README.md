@@ -108,7 +108,7 @@
 <li>Node.js Javascript Library for CLI Execution.</li>
 <li>Express for GET/POST/DELETE Requests between REST APIs.</li>
 <li>Inquirer for prompt interaction, data collection.</li>
-<li>Console.Table for proper CLI table formatting / presentation.
+<li>Console.Table for proper CLI table formatting / presentation.</li>
 <li>Package.JSON / NPM for installing dependencies</li>
 </ul>
 

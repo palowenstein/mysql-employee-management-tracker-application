@@ -18,13 +18,11 @@
 
 ## GIF
 ![MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (GIF)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-1-database-seed-setup.gif "MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (GIF)")
+<br />Gif 1. MySQL Workench: 1) Setting up the database, 2) Populating the database with seed.sql. (GIF)
 <br />
-MySQL Workench: 1) Setting up the database, 2) Populating the database with seed.sql. (GIF)
-
 ![MySQL Employee Management Tracker Application — CLI App Execution (GIF)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-4-node-cli-app-execution-1080p.gif "MySQL Employee Management Tracker Application — CLI App Execution (GIF)")
+<br />Gif 2. Executing the Application via CLI (Command Line Interface) in Terminal.
 <br />
-Executing the Application via CLI (Command Line Interface) in Terminal.
-
 ## Overview
 <ul>
 <li>The MySQL Employee Management Tracker Application allows for the creation and maintenance of an employee database, ideal for company management.</li>
@@ -56,7 +54,7 @@ Executing the Application via CLI (Command Line Interface) in Terminal.
 
 ![MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-0-mac-system-preferences-mysql-running-in-background.png "MySQL Employee Management Tracker Application — MySQL Background Execution / Mac OSX System Preferences (PNG)")
 <br />
-MySQL runs in the background as seen in the MySQL maintenance panel located in System Preferences (Apple Macintosh).
+Fig. 0. MySQL runs in the background as seen in the MySQL maintenance panel located in System Preferences (Apple Macintosh).
 
 
 ## Instructions
@@ -83,21 +81,17 @@ MySQL runs in the background as seen in the MySQL maintenance panel located in S
 ## Screenshots
 
 ![MySQL Employee Management Tracker Application — Setting up the database in MySQL Workbench (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-2-database-setup.png "MySQL Employee Management Tracker Application — Setting up the database in MySQL Workbench (PNG)")
-<h6>Setting up the database in MySQL Workbench (PNG)</h6>
+<br />Fig. 1. Setting up the database in MySQL Workbench (PNG)
 <br />
-
 ![MySQL Employee Management Tracker Application — Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-3-seed-setup.png "MySQL Employee Management Tracker Application — Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)")
-<h6>Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)</h6>
+<br />Fig. 2. Populating the database with seed.sql (ATARI Employees) in MySQL Workbench (PNG)
 <br />
-
 ![MySQL Employee Management Tracker Application — Executing the Application via CLI Interface in Terminal [1] (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-4-node-cli-app-execution.png "MySQL Employee Management Tracker Application — Executing the Application via CLI Interface in Terminal [1] (PNG)")
-<h6>Executing the Application via CLI Interface in Terminal [1] (PNG)</h6>
+<br />Fig. 3. Executing the Application via CLI Interface in Terminal [1] (PNG)
 <br />
-
 ![MySQL Employee Management Tracker Application — Executing the Application via CLI Interface in Terminal [2] (PNG)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-5-node-cli-app-execution.png "MySQL Employee Management Tracker Application — Executing the Application via CLI Interface in Terminal [2] (PNG)")
-<h6>Executing the Application via CLI Interface in Terminal [2] (PNG)</h6>
+<br />Fig. 4. Executing the Application via CLI Interface in Terminal [2] (PNG)
 <br />
-
 ## Video
 
 ![MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (MP4)](./demo_assets/ucla-hw12-mysql-employee-management-tracker-application-1-database-seed-setup.mp4 "MySQL Employee Management Tracker Application — Dabatase, Seed.sql Setup Demo (MP4)")

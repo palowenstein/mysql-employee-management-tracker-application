@@ -14,6 +14,7 @@
   * [Video](#Video)
   * [References](#References)
   * [License](#License)
+  * [Contributions](#Contributions)
   * [Contact](#Contact)
 
 ## GIF

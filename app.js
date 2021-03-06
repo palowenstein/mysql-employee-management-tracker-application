@@ -14,7 +14,7 @@ const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "",
+    password: "Add Database Password Here",
     database: "EmployeeRoster_db"
   });
 
@@ -188,7 +188,6 @@ const viewEmployees = () => {
     d.name,
     r.salary,
     e.manager_id
-
     FROM employee e
     INNER JOIN role r 
     ON e.role_id = r.id

@@ -1,4 +1,4 @@
-## #hw12-mysql-employee-management-tracker-application 
+## #12-mysql-employee-management-tracker-application 
 ![Project license](https://img.shields.io/badge/license-MIT,https://choosealicense.com/licenses/mit/-brightgreen)
 
 <h3>Employee management application executed via a Node Command Line Interface (CLI). Employee information is stored in a MySQL database.</h3>
